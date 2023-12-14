@@ -11,3 +11,8 @@
 	 program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
 6-size.c
 	C program that prints the size of various types on the computer it is compiled and run on.
+101-quote.c
+	C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
+allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+program should return 1
+program should compile without any warnings when using the -Wall gcc option
