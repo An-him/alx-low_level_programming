@@ -6,12 +6,12 @@
 int main(void)
 {
 int alpha = 97, Alpha = 65;
-while(alpha <= 122)
+while (alpha <= 122)
 {
 putchar(alpha);
 alpha++;
 }
-while(Alpha <= 90)
+while (Alpha <= 90)
 {
 putchar(Alpha);
 Alpha++;
