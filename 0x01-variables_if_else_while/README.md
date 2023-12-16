@@ -6,6 +6,7 @@
 4-print_alphabt.c
 5-print_numbers.c
 6-print_numberz.c
+	program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
 7-print_tebahpla.c
 8-print_base16.c
 9-print_comb.c
