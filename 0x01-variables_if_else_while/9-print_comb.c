@@ -15,7 +15,6 @@ putchar(underscore);
 if (numbr == 57)
 {
 comma = comma - 44;
-underscore = underscore - 10;
 }
 }
 putchar(10);
