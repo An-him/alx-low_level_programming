@@ -8,7 +8,7 @@ int _abs(int value)
 {
 if (value < 0)
 {
-value = -value
+value = -value;
 }
 return (value);
 }
