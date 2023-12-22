@@ -7,15 +7,13 @@
 void print_triangle(int size)
 {
 int rows, columns, spaces;
-spaces = 0;
-columns = 0;
-for (rows = 0; rows < size; rows++)
+for (rows = 1; rows <= size; rows++)
 {
-for (spaces = rows; spaces < size; spaces++)
+for (spaces = rows; spaces <= size; spaces++)
 {
 _putchar(' ');
 }
-for (columns = 0; columns < rows; columns++)
+for (columns = 1; columns <= rows; columns++)
 {
 _putchar('#');
 }
