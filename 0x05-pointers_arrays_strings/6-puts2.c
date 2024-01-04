@@ -11,10 +11,11 @@ while (str[length] != '\0')
 {
 length++;
 }
+i = 0;
 while (i < length)
 {
 printf("%c", str[i]);
-i+=2;
+i + = 2;
 }
 putchar(10);
 }
