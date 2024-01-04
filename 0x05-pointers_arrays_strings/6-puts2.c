@@ -6,10 +6,15 @@
 **/
 void puts2(char *str)
 {
-int i;
-for (i = 0; str[i] != '\0'; i = i + 2)
+int length = 0, i;
+while (str[length] != '\0')
 {
-putchar(str[i]);
+length++;
+}
+while (i < length)
+{
+printf("%c", str[i]);
+i+=2;
 }
 putchar(10);
 }
