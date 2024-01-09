@@ -17,10 +17,8 @@ if (s[i] == c)
 p = &s[i];
 break;
 }
-}
-if (!c)
-{
-return (NULL);
+else
+p = NULL;
 }
 return (p);
 }
