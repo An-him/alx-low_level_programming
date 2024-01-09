@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_strchr - function a character in a string
+*_strchr -  function a character in a string
 *@s: string in question
 *@c: character being sought
 *Return:pointer
@@ -17,6 +17,10 @@ if (s[i] == c)
 p = &s[i];
 break;
 }
+}
+if (!c)
+{
+return (NULL);
 }
 return (p);
 }
