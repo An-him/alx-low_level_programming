@@ -15,7 +15,7 @@ return (1);
 }
 i = atoi(argv[1]);
 j = atoi(argv[2]);
-l = i * j;
+l = i *j;
 printf("%i\n", l);
 exit(EXIT_SUCCESS);
 }
