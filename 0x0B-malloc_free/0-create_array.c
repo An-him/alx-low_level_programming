@@ -14,6 +14,10 @@ if (size == 0)
 return (NULL);
 }
 dest = malloc(size);
+if  (dest == NULL)
+{
+return (NULL);
+}
 while (i < size)
 {
 dest[i] = c;
