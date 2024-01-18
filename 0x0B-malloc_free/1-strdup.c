@@ -18,7 +18,7 @@ if (strc == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < Strslength; i++)
+for (i = 0; i <= Strslength; i++)
 {
 str[i] = strc[i];
 }
