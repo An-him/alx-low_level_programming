@@ -13,7 +13,7 @@ if (str == NULL)
 return (NULL);
 }
 Strslength = strlen(str);
-strc = malloc(sizeof(char) * (Strslength + 1));
+strc = malloc((Strslength + 1) * sizeof(char));
 if (strc == NULL)
 {
 return (NULL);
