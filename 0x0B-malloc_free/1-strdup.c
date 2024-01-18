@@ -6,5 +6,21 @@
 **/
 char *_strdup(char *str)
 {
+char *strc = NULL;
+int Strslength, i;
+if (str == NULL)
+{
+return (NULL);
+}
+Strslength = strlen(str);
+strc = malloc(sizeof(char) * Strslength + 1);
+if (strc == NULL)
+{
+return (NULL);
+}
+for (i = 0; i < Strslength; i++)
+{
+str[i] = strc[i];
+}
 return (strc);
 }
