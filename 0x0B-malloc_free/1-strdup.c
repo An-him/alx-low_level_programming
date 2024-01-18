@@ -6,23 +6,21 @@
 **/
 char *_strdup(char *str)
 {
-int i;
+int i, j;
 char *strc = NULL;
-int j = strlen(str);
 if (str == NULL)
 {
 return (NULL);
 }
-strc = malloc(sizeof(char) * j + 1);
+j = strlen(str);
+strc = malloc((j + 1) * sizeof(char));
 if (strc == NULL)
 {
 return (NULL);
 }
-else
-while (str[i] != '\0')
+for (i = 0; i <= j; i++)
 {
 strc[i] = str[i];
-i++;
 }
 return (strc);
 }
