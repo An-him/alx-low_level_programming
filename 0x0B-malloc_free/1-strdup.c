@@ -20,7 +20,7 @@ return (NULL);
 }
 for (i = 0; i <= Strslength; i++)
 {
-str[i] = strc[i];
+strc[i] = str[i];
 }
 return (strc);
 }
