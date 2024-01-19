@@ -11,6 +11,5 @@ if (ptr == NULL)
 {
 exit(98);
 }
-else
 return (ptr);
 }
