@@ -19,13 +19,13 @@ if (s1 == NULL || s2 == NULL)
 return (NULL);
 }
 Lengthofs1 = strlen(s1), Lengthofs2 = strlen(s2);
-str = malloc((Lengthofs1 + Lengthofs2 + 2) * sizeof(char));
+str = malloc((Lengthofs1 + Lengthofs2 + 3) * sizeof(char));
 
 if (str == NULL)
 {
 return (NULL);
 }
-for (Index = 0; s1[Index] != '\0' && s2[Index] != '\0'; Index++)
+for (Index = 0; s1[Index] != '\0'; Index++)
 {
 str[Index] = s1[Index];
 };
