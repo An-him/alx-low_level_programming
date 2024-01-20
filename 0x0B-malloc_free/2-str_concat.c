@@ -30,7 +30,7 @@ for (Index = 0; s1[Index] != '\0' && s2[Index] != '\0'; Index++)
 str[Index] = s1[Index];
 };
 
-for(Indexer = 0; s2[Indexer] != '\0'; Indexer++)
+for (Indexer = 0; s2[Indexer] != '\0'; Indexer++)
 {
 str[Index + Indexer] = s2[Indexer];
 };
