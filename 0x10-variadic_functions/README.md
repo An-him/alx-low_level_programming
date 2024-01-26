@@ -8,4 +8,3 @@ How to use va_start, va_arg and va_end macros
 	va_list ap;
 	va_start intializes the va_list with last known arguments
 	va_start(ap, last_known_argument)
-	
