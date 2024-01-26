@@ -15,10 +15,13 @@ va_start(ap, n);
 for (i = 0; i < n; i++)
 {
 x = va_arg(ap, char *);
+
 if (x == NULL)
 {
 printf("(nil)");
 }
+else
+
 printf("%s", x);
 
 if (separator != NULL && i != n - 1)
