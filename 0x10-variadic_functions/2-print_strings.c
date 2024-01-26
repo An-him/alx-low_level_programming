@@ -20,11 +20,8 @@ if (x == NULL)
 printf("(nil)");
 }
 printf("%s", x);
-if (separator == NULL)
-{
-return;
-}
-if (i != n - 1)
+
+if (separator != NULL && i != n - 1)
 {
 printf("%s", separator);
 }
