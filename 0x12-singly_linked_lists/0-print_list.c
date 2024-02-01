@@ -12,15 +12,15 @@ const list_t *temp = NULL;
 NumberOfNodes = 0;
 temp = h;
 
-if (h->str == NULL)
+if (temp->str == NULL)
 {
 printf("[0] (nil)\n");
 }
-while (temp->next != NULL)
+while (temp != NULL)
 {
-NumberOfNodes++;
 printf("[%i] %s\n", temp->len, temp->str);
 temp = temp->next;
+NumberOfNodes++;
 }
 return (NumberOfNodes);
 }
