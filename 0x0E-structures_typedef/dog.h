@@ -3,6 +3,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * struct dog - stores dog.h data type definition
  * @name: dog's name
