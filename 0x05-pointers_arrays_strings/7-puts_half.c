@@ -15,13 +15,13 @@ if (str1 % 2 == 1)
 {
 for (i = str1 / 2 + 1; i < str1; i++)
 {
-_putchar(str[i]);
+printf("%c", str[i]);
 }
-_putchar(10);
+printf("\n");
 return;
 }
 else
 for (i = str1 / 2; i < str1; i++)
-_putchar(str[i]);
-_putchar(10);
+printf("%c", str[i]);
+printf("\n");
 }
