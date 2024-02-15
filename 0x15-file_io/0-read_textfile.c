@@ -7,17 +7,12 @@
 **/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fd, lengthRead;
-char *buffer;
+int fp;
 ssize_t LetterCount;
 
-
-fd = open(filename, O_RDONLY);
-buffer = malloc(sizeof(char) * letters);
-lengthRead = read(fd, buffer, letters);
-close(fd);
-
-LetterCount = write(STDOUT_FILENO, buffer, lengthRead);
-free(buffer);
+LetterCount = 0;
+fp = open(filename, O_RDONLY);
+write(1, fgetc,letters);
+close(fp);
 return (LetterCount);
 }
