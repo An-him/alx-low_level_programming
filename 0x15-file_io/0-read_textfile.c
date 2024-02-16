@@ -17,6 +17,7 @@ if (filename == NULL)
 {
 return (0);
 }
+
 fp = open(filename, O_RDONLY);
 if (fp == -1)
 return (0);
@@ -30,8 +31,11 @@ return (0);
 
 charsread = read(fp, buffer, letters);
 if (charsread == -1)
+{
+free(buffer);
+close(fp);
 return (0);
-
+}
 LetterCount = write(STDOUT_FILENO, buffer, charsread);
 
 if (LetterCount == -1)
