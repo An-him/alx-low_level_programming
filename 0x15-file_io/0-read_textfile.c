@@ -14,9 +14,6 @@ ssize_t charsread;
 
 LetterCount = 0;
 
-if (filename == NULL)
-return (0);
-
 fp = open(filename, O_RDONLY);
 if (fp == -1)
 return (0);
