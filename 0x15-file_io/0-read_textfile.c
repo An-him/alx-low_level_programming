@@ -7,17 +7,41 @@
 **/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fd, lengthRead;
-char *buffer;
+int fp;
 ssize_t LetterCount;
+char *buffer;
+ssize_t charsread;
 
+LetterCount = 0;
 
-fd = open(filename, O_RDONLY);
+if (filename == NULL)
+return (0);
+
+fp = open(filename, O_RDONLY);
+if (fp == -1)
+return (0);
+
 buffer = malloc(sizeof(char) * letters);
-lengthRead = read(fd, buffer, letters);
-close(fd);
+if (buffer == NULL)
+{
+close(fp);
+return (0);
+}
 
-LetterCount = write(STDOUT_FILENO, buffer, lengthRead);
+charsread = read(fp, buffer, letters);
+if (charsread == -1)
+return (0);
+
+LetterCount = write(STDOUT_FILENO, buffer, charsread);
+
+if (LetterCount == -1)
+{
+free(buffer);
+close(fp);
+return (0);
+}
+
+close(fp);
 free(buffer);
 return (LetterCount);
 }
