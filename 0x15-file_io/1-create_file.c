@@ -16,17 +16,21 @@ if (filename == NULL)
 return (-1);
 }
 
-fp = open(filename, O_CREAT, S_IRUSR | S_IWUSR);
+fp = open(filename, O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 if (fp == -1)
 {
 return (-1);
 }
 
+if (text_content != NULL)
+{
 CharsRead = write(fp, text_content, strlen(text_content));
 if (CharsRead == -1)
 {
-return (1);
+close(fp);
+return (-1);
 }
-fp = close(fp);
-return (0);
+}
+close(fp);
+return (1);
 }
