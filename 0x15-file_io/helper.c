@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*error_exit: checks for error code
+*error_exit - checks for error code
 *@code: code to check for
 *@format: format to check for
 *Return: int
