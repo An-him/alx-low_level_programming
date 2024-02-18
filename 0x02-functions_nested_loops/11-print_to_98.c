@@ -16,8 +16,10 @@ putchar(44);
 putchar(32);
 n++;
 }
+printf("\n");
 }
 else
+{
 while (n >= 98)
 {
 printf("%i", n);
@@ -27,4 +29,5 @@ putchar(32);
 n--;
 }
 printf("\n");
+}
 }
