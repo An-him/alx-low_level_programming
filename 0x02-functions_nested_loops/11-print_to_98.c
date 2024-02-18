@@ -10,14 +10,20 @@ if (n < 98)
 {
 while (n <= 98)
 {
-printf("%i, ", n);
+printf("%i", n);
+if (n != 98)
+putchar(44);
+putchar(32);
 n++;
 }
 }
 else
 while (n >= 98)
 {
-printf("%i, ", n);
+printf("%i", n);
+if (n != 98)
+putchar(44);
+putchar(32);
 n--;
 }
 printf("\n");
