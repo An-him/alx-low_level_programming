@@ -12,8 +12,7 @@ while (n <= 98)
 {
 printf("%i", n);
 if (n != 98)
-putchar(44);
-putchar(32);
+printf(", ");
 n++;
 }
 printf("\n");
@@ -24,8 +23,7 @@ while (n >= 98)
 {
 printf("%i", n);
 if (n != 98)
-putchar(44);
-putchar(32);
+printf(", ");
 n--;
 }
 printf("\n");
