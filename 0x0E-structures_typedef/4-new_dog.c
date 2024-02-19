@@ -13,7 +13,7 @@ if (name == NULL || owner == NULL)
 {
 return (NULL);
 }
-dog = malloc(sizeof(struct dog));
+dog = malloc(sizeof(dog_t));
 if (dog == NULL)
 {
 return (NULL);
