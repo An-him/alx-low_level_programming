@@ -5,7 +5,8 @@
 **/
 int main(void)
 {
-int numbr1 = 48, numbr2 = 48, number3 = 49, number4 = 48, space = 32, comma = 44;
+int numbr1 = 48;
+int numbr2 = 48, number3 = 49, number4 = 48, space = 32, comma = 44;
 for (; numbr1 < 58; ++numbr1)
 {
 for (numbr2 = numbr1; numbr2 < 58; ++numbr2)
