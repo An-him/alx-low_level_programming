@@ -1,25 +1,35 @@
 #include "main.h"
 /**
-*
-*
-*
+*cap_string - captalizes words in string
+*@str: string
+*Return: char
 **/
-
 char *cap_string(char *str)
 {
 
 int i;
-
+int capialize = 1;
 i = 0;
 while (str[i] != '\0')
 {
-if ((str[i] >= 4 && str[i] < 48) || (str[i] > 57 && str[i] < 65) || (str[i] > 90 && str[i] < 97) || (str[i] > 122 && str[i] < 127))
+if (str[i] == '\t' || str[i] == '\n' ||
+str[i] == '.' || str[i] == ',' ||
+str[i] == '!' || str[i] == ';' ||
+str[i] == '(' || str[i] == ')' ||
+str[i] == '{' || str[i] == '}' ||
+str[i] == '"' || str[i] == '?' ||
+str[i] == ' ')
 {
-i++;
-if (str[i] >= 'a' && str[i] <= 'z')
+capialize = 1;
+}
+else if (capialize && str[i] >= 'a' && str[i] <= 'z')
 {
 str[i] -= 32;
+capialize = 0;
 }
+else
+{
+capialize = 0;
 }
 i++;
 }
