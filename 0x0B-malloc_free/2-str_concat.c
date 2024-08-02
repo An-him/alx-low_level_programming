@@ -1,39 +1,42 @@
 #include "main.h"
+#include <stdlib.h>
 /**
-*str_concat - function concats string
-*@s1: string1
-*@s2: string2
-*Return: pointer to allocated memory
-**/
+ * str_concat - get ends of input and add together for size
+ * @s1: input one to concat
+ * @s2: input two to concat
+ * Return: concat of s1 and s2
+ */
 char *str_concat(char *s1, char *s2)
 {
-int Lengthofs1;
-int Lengthofs2;
-int Index;
-int Indexer;
+	char *conct;
+	int i, ci;
 
-char *str = NULL;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-if (s1 == NULL || s2 == NULL)
-{
-return (NULL);
-}
-Lengthofs1 = strlen(s1), Lengthofs2 = strlen(s2);
-str = malloc((Lengthofs1 + Lengthofs2 + 3) * sizeof(char));
+	i = ci = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[ci] != '\0')
+		ci++;
+	conct = malloc(sizeof(char) * (i + ci + 1));
 
-if (str == NULL)
-{
-return (NULL);
-}
-for (Index = 0; s1[Index] != '\0'; Index++)
-{
-str[Index] = s1[Index];
-};
+	if (conct == NULL)
+		return (NULL);
+	i = ci = 0;
+	while (s1[i] != '\0')
+	{
+		conct[i] = s1[i];
+		i++;
+	}
 
-for (Indexer = 0; s2[Indexer] != '\0'; Indexer++)
-{
-str[Index + Indexer] = s2[Indexer];
-};
-str[Index + Indexer] = '\0';
-return (str);
+	while (s2[ci] != '\0')
+	{
+		conct[i] = s2[ci];
+		i++, ci++;
+	}
+	conct[i] = '\0';
+	return (conct);
 }
